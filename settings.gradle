@@ -17,8 +17,11 @@ dependencyResolutionManagement {
             library("lombok", "org.projectlombok", "lombok").versionRef("lombok")
             library("postgresql", "org.postgresql", "postgresql").versionRef("postgresql")
             library("spring-websocket", "org.springframework.boot", "spring-boot-starter-websocket").versionRef("spring")
+            library("spring-graphql", "org.springframework.boot", "spring-boot-starter-graphql").versionRef("spring")
         }
     }
 }
 include 'lab2'
+include 'lab4'
+include 'lab3'
 

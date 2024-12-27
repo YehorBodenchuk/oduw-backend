@@ -1,0 +1,17 @@
+type Mutation {
+    addTask(name: String, description: String, color: String, author: String): Task
+    updateTask(id: ID!, name: String, description: String, color: String, author: String): Task
+}
+
+type Query {
+    getAllTasks: [Task]
+    getTaskById(id: ID!): Task
+}
+
+type Task {
+    id: ID
+    name: String
+    description: String
+    author: String
+    color: String
+}
